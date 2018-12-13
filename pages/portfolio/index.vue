@@ -17,15 +17,15 @@ export default {
 		lButton,
 		lSection,
 	},
-	asyncData({ params, error }) {
-		// return axios.get(apiDomain + '/wp/v2/pages/6').then(async result => {
-		// 	let pageData = result.data;
-		// 	return {
-		// 		pageTitle: pageData.title.rendered,
-		// 		pageContent: pageData.content.rendered,
-		// 	};
-		// });
-	},
+	// asyncData({ params, error }) {
+	// 	return axios.get(apiDomain + '/wp/v2/pages/6').then(async result => {
+	// 		let pageData = result.data;
+	// 		return {
+	// 			pageTitle: pageData.title.rendered,
+	// 			pageContent: pageData.content.rendered,
+	// 		};
+	// 	});
+	// },
 };
 </script>
 
@@ -37,5 +37,13 @@ export default {
 	&--home {
 		// specific home styles
 	}
+}
+
+.intro {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 </style>

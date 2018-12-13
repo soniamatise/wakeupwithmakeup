@@ -34,8 +34,9 @@ export default {
 
 .page {
 	// general page styles
-	&--home {
+	&--contact {
 		// specific home styles
 	}
 }
+
 </style>

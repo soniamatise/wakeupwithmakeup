@@ -4,8 +4,11 @@ module.exports = {
 	/*
   ** Headers of the page
   */
+	env: {
+		apiDomain: 'https://soniaanubis.com/wordpress/wp-json',// CHANGE
+	},
 	head: {
-		title: pkg.name,
+		title: 'Wake Up With Make Up',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },

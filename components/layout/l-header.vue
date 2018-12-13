@@ -65,15 +65,24 @@ export default {};
 		}
 		&__item {
 			&:hover {
+				.main-nav__text {
+					&::before {
+						opacity: 1;
+					}
+				}
 				
 			}
 
 		}
 		&__link {
-
+			position: relative;
 		}
 		&__text {
 			text-transform: uppercase;
+			&::before {
+				content: '-';	
+				opacity: 0;	
+			}
 		}
 	}
 }
