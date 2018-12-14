@@ -1,9 +1,14 @@
 <template>
 	<header id="header" class="header">
-		<div class="row center small-full medium-full large-14">
+		<div class="row center small-full medium-full large-20">
 			<div class="column">
 				<nav class="main-nav">
 					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<nuxt-link to="/" class="main-nav__link">
+								<div :style="`background-image: url(${logo})`" class="logo"/>
+							</nuxt-link>
+						</li>
 						<li class="main-nav__item">
 							<nuxt-link to="/maggy" class="main-nav__link">
 								<span class="main-nav__text">Over Maggy</span>
@@ -17,11 +22,6 @@
 						<li class="main-nav__item">
 							<nuxt-link to="/portfolio" class="main-nav__link">
 								<span class="main-nav__text">Portfolio</span>
-							</nuxt-link>
-						</li>
-						<li class="main-nav__item">
-							<nuxt-link to="/" class="main-nav__link">
-								<!-- <span class="main-nav__text"><div :style="`background-image: url(${logo})`" class="logo"/></span> -->
 							</nuxt-link>
 						</li>
 						<li class="main-nav__item">
@@ -47,14 +47,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+	data(){
+		return {
+			logo: require('~/static/images/logo/logo.png'),
+		}
+	},
+};
 </script>
 
 <style lang="scss">
 @import '~tools';
 
 .header {
-	padding: 2rem 0;
+	padding: 5px 0;
 	// Header styles
 	.main-nav {
 		&__list {
@@ -76,8 +82,16 @@ export default {};
 		}
 		&__link {
 			position: relative;
+			.logo {
+				width: 300px;
+				height: 150px;
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
 		}
 		&__text {
+			font-size: 1rem;
 			text-transform: uppercase;
 			&::before {
 				content: '-';	

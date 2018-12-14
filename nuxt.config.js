@@ -5,7 +5,7 @@ module.exports = {
   ** Headers of the page
   */
 	env: {
-		apiDomain: 'https://soniaanubis.com/wordpress/wp-json',// CHANGE
+		apiDomain: 'https://wakeupwithmakeup.com/wordpress/wp-json',
 	},
 	head: {
 		title: 'Wake Up With Make Up',
