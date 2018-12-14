@@ -76,6 +76,7 @@ export default {
 	}
 	//RIGHT
 	&__text {
+		z-index: 1;
 		width: 50%;
 		padding: grid(0 1);
 	}

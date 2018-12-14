@@ -18,6 +18,7 @@ import lImageText from '~/components/elements/l-image-text.vue';
 
 
 
+
 export default {
 	components: {
 		lButton,

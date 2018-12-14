@@ -20,6 +20,9 @@ body {
 	background-color: color(Dark);
 	color: color(White);
 }
+.page {
+	z-index: 1;
+}
 
 [aria-hidden='true'] {
 	position: absolute;
