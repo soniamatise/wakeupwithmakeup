@@ -1,5 +1,5 @@
 <template>
-	<div class="row center small-full medium-full large-18 section-container">
+	<div class="row center small-full medium-full large-20 section-container">
 		<section class="section column">
 			<h2 class="section__title">{{ sectionTitle }}</h2>
 			<!-- <h3>{{ sectionSubtitle }}</h3> -->

@@ -22,6 +22,13 @@ body {
 }
 .page {
 	z-index: 1;
+	position: relative;
+}
+
+.layout {
+	@media #{$medium-down} {
+		margin: 0px 20px;
+	}
 }
 
 [aria-hidden='true'] {
@@ -39,3 +46,4 @@ body {
 img:not([alt]), img[alt=""] {
 	outline: none;
 }
+

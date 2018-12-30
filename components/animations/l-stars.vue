@@ -20,7 +20,9 @@ export default {
 	height: 100%;
 	width: 100%;
 	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
+	overflow: hidden;
+	top: 0;
+	left: 0;
   
 	#stars {
 	width: 1px;

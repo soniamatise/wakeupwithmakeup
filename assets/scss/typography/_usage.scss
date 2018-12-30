@@ -7,7 +7,7 @@ p,
 li {
 	font-size: rem(18);
 	line-height: 1.5;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 // Headings
@@ -61,10 +61,10 @@ h6 {
 	color: color(White);
 }
 p{
-  color: color(Grey);
+  color: color(White);
 }
 
 
 a {
-	text-decoration: none;
+	text-decoration: color(Gold);
 }

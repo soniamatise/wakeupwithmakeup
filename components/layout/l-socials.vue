@@ -36,6 +36,9 @@ ul {
 	&:hover {
 		color: color(White) !important;
 	}
+	&:before {
+			content: "\F16D";
+		}
 }
 ul.social-icons {
 	margin-top: 10px;

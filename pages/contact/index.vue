@@ -1,12 +1,10 @@
 <template>
-	<main class="page page--home">
-		<!-- <l-section :section-title="pageTitle" :section-content="pageContent" /> -->
-		<!-- <l-image-text 
-			:image1="require('~/static/images/home/maggy2.jpg')"
-			:image2="require('~/static/images/home/eyebrowshape1.jpg')" 
-			:image3="require('~/static/images/home/circleIcon_rose.png')"  
-			title="hey" 
-			content="info"/> -->
+	<main class="page page--contact">
+		<l-header-image-full />
+		<l-section 
+			section-title="Contact" 
+			section-content="Mocht je vragen hebben, neem dan vooral contact met me op. Een vrijblijvend consult behoort ook tot de mogelijkheden." 
+		/>
 	</main>
 </template>
 
@@ -16,6 +14,7 @@ const apiDomain = process.env.apiDomain;
 import lButton from '~/components/elements/l-button.vue';
 import lSection from '~/components/elements/l-section.vue';
 import lImageText from '~/components/elements/l-image-text.vue';
+import lHeaderImageFull from '~/components/elements/l-header-image-full.vue';
 
 
 export default {
@@ -23,6 +22,7 @@ export default {
 		lButton,
 		lSection,
 		lImageText,
+		lHeaderImageFull
 	},
 	// asyncData({ params, error }) {
 	// 	return axios.get(apiDomain + '/wp/v2/pages')	

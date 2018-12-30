@@ -11,6 +11,7 @@
 				<div class="image-text__images--mask image-text__images--mask-third">
 					<div :style="`background-image: url('${ image3 }')`" class="image" />
 				</div>
+				<div class="image-text__images--tag"><h3>{{ tagText }}</h3></div>
 			</div>
 			<div class="image-text__text">
 				<h2 class="image-text__title">{{ title }}</h2>
@@ -22,7 +23,7 @@
 
 <script>
 export default {
-	props: ['title', 'content', 'image1', 'image2', 'image3'],
+	props: ['title', 'content', 'image1', 'image2', 'image3', 'tagText'],
 };
 </script>
 
@@ -38,6 +39,16 @@ export default {
 		width: 50%;
 		height: 100%;
 		position: relative;
+		z-index: 1;
+		&--tag {
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			left: 110%;
+			background-color: color(Gold);
+			white-space: nowrap;
+			padding: 5px 1rem;
+		}
 		&--mask {
 			overflow: hidden;
 
@@ -76,8 +87,16 @@ export default {
 	}
 	//RIGHT
 	&__text {
-		z-index: 1;
 		width: 50%;
+		padding: grid(0 1 0 2);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.image-text__content{
+			padding: grid(0 0 0 1);
+		}
+	}
+	&__content {
 		padding: grid(0 1);
 	}
 }
