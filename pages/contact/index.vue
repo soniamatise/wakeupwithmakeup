@@ -1,9 +1,9 @@
 <template>
 	<main class="page page--contact">
-		<l-header-image-full />
+		<l-header-image-full :image-bg="contactHeader"/>
 		<l-section 
 			section-title="Contact" 
-			section-content="Mocht je vragen hebben, neem dan vooral contact met me op. Een vrijblijvend consult behoort ook tot de mogelijkheden." 
+			section-content="<p>Mocht je vragen hebben, neem dan vooral contact met me op. Een vrijblijvend consult behoort ook tot de mogelijkheden.</p>" 
 		/>
 	</main>
 </template>
@@ -23,6 +23,11 @@ export default {
 		lSection,
 		lImageText,
 		lHeaderImageFull
+	},
+	data() {
+		return {
+			contactHeader: require('~/static/images/headers/eyebrows.jpg'),
+		};
 	},
 	// asyncData({ params, error }) {
 	// 	return axios.get(apiDomain + '/wp/v2/pages')	

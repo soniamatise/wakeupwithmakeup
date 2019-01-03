@@ -24,7 +24,7 @@ export default {
 
 		}
 		&__content {
-
+			padding-bottom: 3rem;
 		}
 	}
 }

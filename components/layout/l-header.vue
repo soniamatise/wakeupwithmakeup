@@ -72,12 +72,11 @@ export default {
 
 .header {
 	padding: 5px 0;
-	// position: relative;
-	// Header styles
+
 	.main-nav {
 		@media #{$medium-down} {
-			background: red;
-			position: absolute;
+			background: color(Dark);
+			position: fixed;
 			width: 0%;
 			height: 100vh;
 			z-index: 2;
@@ -94,6 +93,7 @@ export default {
 			flex-direction: row;
 			justify-content: space-around;
 			align-items: center;
+			padding: 1rem 0 2rem;
 			@media #{$medium-down} {
 				flex-direction: column;
 				height: 100%;
@@ -114,6 +114,31 @@ export default {
 				justify-content: center;
 			}
 		}
+		&__text {
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			position: relative;
+			color: color(Gold);
+			font-family: $second-font;
+			transition: color 600ms $easing;
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -2px;
+				height: 2px;
+				width: 0%;
+				background-color: color(Gold);
+				transition: width 400ms $easing, background-color 600ms $easing;
+			}
+			&:hover {
+				text-shadow: 1px 0px 20px color(Dark);
+				&::before {
+					width: 100%;
+				}
+			}
+		}
 		&__link {
 			position: relative;
 			.logo {
@@ -123,25 +148,25 @@ export default {
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
-		}
-		&__text {
-			font-size: 1rem;
-			text-transform: uppercase;
-			&::before {
-				content: '-';	
-				opacity: 0;	
+			&.nuxt-link-active {
+				.main-nav__text {
+					color: color(White);
+					&::before {
+						width: 100%;
+						background-color: color(White);
+					}
+				}
 			}
 		}
 	}
-	$bar-width: 100px;
-	$bar-height: 10px;
-	$bar-spacing: 25px;
+	$bar-width: 40px;
+	$bar-height: 5px;
+	$bar-spacing: 10px;
 
 	.menu-wrapper {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
+		position: fixed;
+		top: 40px;
+		right: 20px;
 		margin: auto;
 		z-index: 3;
 		width: $bar-width;
@@ -163,7 +188,7 @@ export default {
 	.hamburger-menu {
 		position: relative;
 		transform: translateY($bar-spacing);
-		background: rgba(255, 255, 255, 1);
+		background: color(Gold);
 		transition: all 0ms 300ms;
 		
 		&.animate {
@@ -176,7 +201,7 @@ export default {
 		position: absolute;
 		left: 0;
 		bottom: $bar-spacing;
-		background: rgba(255, 255, 255, 1);
+		background: color(Gold);
 		transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 
@@ -185,7 +210,7 @@ export default {
 		position: absolute;
 		left: 0;
 		top: $bar-spacing;
-		background: rgba(255, 255, 255, 1);
+		background: color(Gold);
 		transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 

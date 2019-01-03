@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--home">
-		<l-header-image-full/>
+		<l-header-image-full :image-bg="aboutHeader"/>
 		<l-section section-title="About Maggy" section-content="
 		<p>Welkom bij Wake Up With Makeup! Mag ik mij even voorstellen? Ik ben Maggy, permanent makeup artist uit Amsterdam. In 2013 heb ik de basisopleiding allround permanente make-up gevolgd, bij MB Cosmetics, omdat ik altijd al een voorliefde voor makeup heb gehad. Direct daarna ben ik gestart met het zetten van permanente makeup en doe ik dit nog steeds met veel plezier en overgave. Het is fantastisch om mensen een nieuwe look te geven en te zien stralen na een afspraak….</p>
 <p>Ik ben voorstander van een natuurlijke look, ik zoek samen met mijn klant de vorm en kleur uit, wat bij het gezicht past, voor zowel de wenkbrauwen, eyeliner en lippen. Ik volg hierin geen modetrends, als iets “in” is, wil dat niet zeggen dat het goed bij iemands gezicht past. 
@@ -42,6 +42,11 @@ export default {
 		// 		pageContent: pageData.content.rendered,
 		// 	};
 		// });
+	},
+	data() {
+		return {
+			aboutHeader: require('~/static/images/headers/about.jpg'),
+		};
 	},
 };
 </script>

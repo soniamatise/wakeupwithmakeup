@@ -11,6 +11,14 @@ h3{
   }
 }
 
+h2 + .section__content {
+  margin-top: 1rem;
+}
+
+h2.section__title {
+  margin-top: 2rem;
+}
+
 h1 + .button{
   margin-top: 24px; 
 }
@@ -22,3 +30,4 @@ h1 + .button{
 p + .button{
   margin-top: 24px; 
 }
+

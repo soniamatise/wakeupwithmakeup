@@ -5,7 +5,7 @@
 			:image2="require('~/static/images/home/eyebrowshape1.jpg')" 
 			:image3="require('~/static/images/home/circleIcon_rose.png')"  
 			title="SAY YES TO SMUDGEPROOF MAKEUP!" 
-			tag-text="Maggy Zingstok"
+			tag-text="SAY YES TO SMUDGEPROOF MAKEUP!"
 			content="<p>Welkom bij Wake Up With Makeup! Mag ik mij even voorstellen? Ik ben Maggy, permanent makeup artist uit Amsterdam.</p>"/>
 	</main>
 </template>

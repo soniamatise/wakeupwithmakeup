@@ -31,7 +31,7 @@ module.exports = {
   ** Nuxt.js modules
   */
 
-	modules: ['nuxt-rfg-icon', '@nuxtjs/manifest', '@nuxtjs/pwa'],
+	modules: ['nuxt-rfg-icon', '@nuxtjs/manifest', '@nuxtjs/pwa', '@nuxtjs/font-awesome'],
 	/*
   ** Axios module configuration
   */

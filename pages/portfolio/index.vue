@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--home">
-		<l-header-image-full/>
+		<l-header-image-full :image-bg="portfolioHeader"/>
 		<l-section section-title="Portfolio" section-content="Ik ben wat content" />
 		<!-- <l-button button-url="/go" button-text="Kaas"/> -->
 	</main>
@@ -29,6 +29,11 @@ export default {
 	// 		};
 	// 	});
 	// },
+	data() {
+		return {
+			portfolioHeader: require('~/static/images/headers/eyebrows.jpg'),
+		};
+	},
 };
 </script>
 
