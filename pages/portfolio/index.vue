@@ -1,8 +1,12 @@
 <template>
-	<main class="page page--home">
-		<l-header-image-full :image-bg="portfolioHeader"/>
-		<l-section section-title="Portfolio" section-content="Ik ben wat content" />
+	<main class="page page--portfolio">
+		<!-- <l-header-image-full :image-bg="portfolioHeader"/> -->
+		<l-section section-title="Portfolio" section-content="" />
 		<!-- <l-button button-url="/go" button-text="Kaas"/> -->
+		<l-image-section :image1="dorien" :image2="eyeliner"/>
+		<l-image-section :image1="hairstrokes1" :image2="hairstrokes2" :image3="hairstrokes3"/>
+		<l-image-section :image1="hairstrokes4" :image2="hairstrokes5" :image3="hairstrokes6"/>
+		<l-image-section :image1="powderbrow" :image2="powderbrow1"/>
 	</main>
 </template>
 
@@ -12,26 +16,29 @@ const apiDomain = process.env.apiDomain;
 import lButton from '~/components/elements/l-button.vue';
 import lSection from '~/components/elements/l-section.vue';
 import lHeaderImageFull from '~/components/elements/l-header-image-full.vue';
+import lImageSection from '~/components/elements/l-image-section.vue';
+
 
 
 export default {
 	components: {
 		lButton,
 		lSection,
-		lHeaderImageFull
+		lHeaderImageFull,	
+		lImageSection
 	},
-	// asyncData({ params, error }) {
-	// 	return axios.get(apiDomain + '/wp/v2/pages/6').then(async result => {
-	// 		let pageData = result.data;
-	// 		return {
-	// 			pageTitle: pageData.title.rendered,
-	// 			pageContent: pageData.content.rendered,
-	// 		};
-	// 	});
-	// },
 	data() {
 		return {
-			portfolioHeader: require('~/static/images/headers/eyebrows.jpg'),
+			dorien: require('~/static/images/portfolio/dorien.jpg'),
+			eyeliner: require('~/static/images/portfolio/eyeliner.jpg'),
+			hairstrokes1: require('~/static/images/portfolio/hairstrokes1.jpg'),
+			hairstrokes2: require('~/static/images/portfolio/hairstrokes2.jpg'),
+			hairstrokes3: require('~/static/images/portfolio/hairstrokes3.jpg'),
+			hairstrokes4: require('~/static/images/portfolio/hairstrokes4.jpg'),
+			hairstrokes5: require('~/static/images/portfolio/hairstrokes5.jpg'),
+			hairstrokes6: require('~/static/images/portfolio/hairstrokes6.jpg'),
+			powderbrow: require('~/static/images/portfolio/powderbrow.jpg'),
+			powderbrow1: require('~/static/images/portfolio/powderbrow1.jpg'),
 		};
 	},
 };
@@ -42,16 +49,9 @@ export default {
 
 .page {
 	// general page styles
-	&--home {
+	&--portfolio {
 		// specific home styles
 	}
 }
 
-.intro {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 </style>
