@@ -34,16 +34,13 @@ export default {
 		};
 	},
 	asyncData({ params, error }) {
-		return axios.get(apiDomain + '/wp/v2/pages/15')	
-			.then(async result => {
+		return axios.get(apiDomain + '/wp/v2/pages/15').then(async result => {
 			let pageData = result.data;
 			return {
 				pageTitle: pageData.title.rendered,
 				pageContent: pageData.content.rendered,
 			};
-			}, function(error){
-				console.error(error);
-			});
+		});
 	},
 };
 </script>
