@@ -1,12 +1,10 @@
 <template>
 	<main class="page page--portfolio">
-		<!-- <l-header-image-full :image-bg="portfolioHeader"/> -->
 		<l-section section-title="Portfolio" section-content="" />
-		<!-- <l-button button-url="/go" button-text="Kaas"/> -->
 		<l-image-section :image1="dorien" :image2="eyeliner"/>
-		<l-image-section :image1="hairstrokes1" :image2="hairstrokes2" :image3="hairstrokes3"/>
+		<l-image-section :image1="hairstrokes1" :image2="hairstrokes2" :image3="hairstrokes3" section-title="Hairstrokes"/>
 		<l-image-section :image1="hairstrokes4" :image2="hairstrokes5" :image3="hairstrokes6"/>
-		<l-image-section :image1="powderbrow" :image2="powderbrow1"/>
+		<l-image-section :image1="powderbrow" :image2="powderbrow1" section-title="Powderbrow"/>
 	</main>
 </template>
 

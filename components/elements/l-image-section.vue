@@ -1,5 +1,8 @@
 <template>
 	<div class="row center small-full medium-full large-20 image-section-container">
+		<section v-if="sectionTitle" class="section column">
+			<h3>{{ sectionTitle }}</h3>
+		</section>
 		<section class="section column">
 			<div :style="`background-image: url('${ image1 }')`" class="image" />
 			<div :style="`background-image: url('${ image2 }')`" class="image" />
@@ -10,7 +13,7 @@
 
 <script>
 export default {
-	props: ['image1', 'image2','image3'],
+	props: ['image1', 'image2','image3', 'sectionTitle'],
 };
 </script>
 
@@ -27,6 +30,9 @@ export default {
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
+		}
+		h3 {
+			padding: 2rem 0 1rem;
 		}
 	}
 }
