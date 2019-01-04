@@ -146,6 +146,7 @@ export default {
 			width: 100%;
 		}
 		table {
+			width: 100%;
 			border: 2px white solid;
 		}
 	}

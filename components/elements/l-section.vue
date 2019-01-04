@@ -2,8 +2,8 @@
 	<div class="row center small-full medium-full large-20 section-container">
 		<section class="section column">
 			<h2 class="section__title">{{ sectionTitle }}</h2>
-			<!-- <h3>{{ sectionSubtitle }}</h3> -->
 			<div class="section__content" v-html="sectionContent"/>
+			<slot/>
 		</section>
 	</div>
 </template>

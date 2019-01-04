@@ -126,7 +126,7 @@ export default {
 				content: '';
 				position: absolute;
 				left: 0;
-				bottom: -2px;
+				bottom: -1px;
 				height: 2px;
 				width: 0%;
 				background-color: color(Gold);

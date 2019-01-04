@@ -64,7 +64,26 @@ p{
   color: color(White);
 }
 
-
 a {
-	text-decoration: color(Gold);
+	text-decoration: none;
+}
+a:not([class])[href] {
+	text-decoration: none;
+	color: color(Gold);
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		height: 1px;
+		width: 0%;
+		background-color: color(Gold);
+		transition: width 400ms $easing, background-color 600ms $easing;
+	}
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+	}
 }

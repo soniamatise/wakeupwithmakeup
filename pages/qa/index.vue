@@ -8,9 +8,6 @@
 				<l-question-answer question="Permanente make-up…… en zon" answer="Het advies is om niet vlakvoor een zonvakantie permanente make-up te laten zetten. Bescherm uw permanente make-up in de zon met een beschermingsfactor 30+ of hoger. "/>
 				<l-question-answer question="Permanente make-up…… en chemokuur" answer="Tijdens of vlak na de chemokuur kunnen de wenkbrauw- en wimperhaartjes uitvallen. Alvorens u de chemokuur krijgt, kunt u de keuze maken om permanente make-up te zeten. Het is ten alle tijden verstandig om uw behandelend arts op de hoogte te stellen van de behandeling die u wilt ondergaan en hem/haar om advies te vragen."/>
 				<l-question-answer question="Ik heb permanente make-up vanuit een andere salon en wil een afspraak" answer="Een touch up van elders gezette permanente make-up kan vaak, maar niet altijd. Neem contact met me op en dan plannen we een consult. "/>
-				<l-question-answer question="" answer=""/>
-				<l-question-answer question="" answer=""/>
-
 			</div>
 		</div>
 	</main>
