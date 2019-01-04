@@ -12,32 +12,32 @@
 				</li>
 				<nav :class="['main-nav', { 'animate': showMobileMenu }]">
 					<ul class="main-nav__list">
-						<li class="main-nav__item">
+						<li class="main-nav__item" @click="toggleMenu()">
 							<nuxt-link to="/maggy" class="main-nav__link">
 								<span class="main-nav__text">Over Maggy</span>
 							</nuxt-link>
 						</li>
-						<li class="main-nav__item">
+						<li class="main-nav__item" @click="toggleMenu()">
 							<nuxt-link to="/informatie" class="main-nav__link">
 								<span class="main-nav__text">Informatie</span>
 							</nuxt-link>
 						</li>
-						<li class="main-nav__item">
+						<li class="main-nav__item" @click="toggleMenu()">
 							<nuxt-link to="/portfolio" class="main-nav__link">
 								<span class="main-nav__text">Portfolio</span>
 							</nuxt-link>
 						</li>
-						<li class="main-nav__item">
+						<li class="main-nav__item" @click="toggleMenu()">
 							<nuxt-link to="/prijslijst" class="main-nav__link">
 								<span class="main-nav__text">Prijslijst</span>
 							</nuxt-link>
 						</li>
-						<li class="main-nav__item">
+						<li class="main-nav__item" @click="toggleMenu()">
 							<nuxt-link to="/qa" class="main-nav__link">
 								<span class="main-nav__text">Q&A</span>
 							</nuxt-link>
 						</li>
-						<li class="main-nav__item">
+						<li class="main-nav__item" @click="toggleMenu()">
 							<nuxt-link to="/contact" class="main-nav__link">
 								<span class="main-nav__text">Contact</span>
 							</nuxt-link>
@@ -59,9 +59,9 @@ export default {
 	},
 	methods: {
 		toggleMenu: function () {
-			this.showMobileMenu = !this.showMobileMenu;
-			console.log(this.showMobileMenu);
-			
+			if(window.innerWidth < 961){
+				this.showMobileMenu = !this.showMobileMenu;
+			}
 		}
 	}
 };
@@ -142,8 +142,8 @@ export default {
 		&__link {
 			position: relative;
 			.logo {
-				width: 300px;
-				height: 150px;
+				width: 400px;
+				height: 250px;
 				background-position: center center;
 				background-size: contain;
 				background-repeat: no-repeat;

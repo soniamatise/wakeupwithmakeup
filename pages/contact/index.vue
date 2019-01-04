@@ -1,9 +1,13 @@
 <template>
 	<main class="page page--contact">
 		<l-header-image-full :image-bg="contactHeader"/>
-		<l-section 
+		<!-- <l-section 
 			section-title="Contact" 
 			section-content="<p>Mocht je vragen hebben, neem dan vooral contact met me op. Een vrijblijvend consult behoort ook tot de mogelijkheden.</p>" 
+		/> -->
+		<l-section 
+			:section-title="pageTitle" 
+			:section-content="pageContent" 
 		/>
 	</main>
 </template>
@@ -29,31 +33,18 @@ export default {
 			contactHeader: require('~/static/images/headers/eyebrows.jpg'),
 		};
 	},
-	// asyncData({ params, error }) {
-	// 	return axios.get(apiDomain + '/wp/v2/pages')	
-	// 		.then(async result => {
-	// 		let pageData = result.data;
-	// 		console.log(pageData);
-	// 		return {
-	// 			// pageTitle: pageData.title.rendered,
-	// 			// pageContent: pageData.content.rendered,
-	// 		};
-	// 		}, function(error){
-	// 			console.error(error);
-	// 		});
-	// },
-	// async asyncData() {
-	// 	try {
-    //         let page = await axios({
-    //             method: 'get',
-    //             url: apiDomain + '/wp/v2/pages',
-    //         });
-    //         console.log(page);
-    //     } catch (err) {
-	// 		console.error(err);
-    //         //handle error message
-	// 	}
-    // }
+	asyncData({ params, error }) {
+		return axios.get(apiDomain + '/wp/v2/pages/15')	
+			.then(async result => {
+			let pageData = result.data;
+			return {
+				pageTitle: pageData.title.rendered,
+				pageContent: pageData.content.rendered,
+			};
+			}, function(error){
+				console.error(error);
+			});
+	},
 };
 </script>
 

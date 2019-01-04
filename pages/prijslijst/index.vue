@@ -8,7 +8,7 @@
 					<h3>Permanente make-up</h3>
 					<table>
 						<tr>
-							<th>Wenkbrouwen</th>
+							<th>Wenkbrauwen</th>
 							<th>Prijs</th>
 						</tr>
 						<tr>
