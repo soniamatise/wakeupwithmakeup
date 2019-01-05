@@ -3,10 +3,9 @@
 		<l-image-text 
 			:image1="require('~/static/images/home/maggy2.jpg')"
 			:image2="require('~/static/images/home/eyebrowshape1.jpg')" 
-			:image3="require('~/static/images/home/circleIcon_rose.png')"  
-			title="SAY YES TO SMUDGEPROOF MAKEUP!" 
-			tag-text="SAY YES TO SMUDGEPROOF MAKEUP!"
-			content="<p>Welkom bij Wake Up With Makeup! Mag ik mij even voorstellen? Ik ben Maggy, permanent makeup artist uit Amsterdam.</p>"/>
+			:image3="require('~/static/images/home/circleIcon_rose.png')"/>
+
+			<!-- SAY YES TO SMUDGEPROOF MAKEUP! --> 
 	</main>
 </template>
 
