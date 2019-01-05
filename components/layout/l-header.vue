@@ -79,7 +79,7 @@ export default {
 			position: fixed;
 			width: 0%;
 			height: 100vh;
-			z-index: 2;
+			z-index: 4;
 			top: 0;
 			left: 0;
 			overflow: hidden;
@@ -168,7 +168,7 @@ export default {
 		top: 40px;
 		right: 20px;
 		margin: auto;
-		z-index: 3;
+		z-index: 5;
 		width: $bar-width;
 		height: $bar-height + $bar-spacing*2;
 		cursor: pointer;
