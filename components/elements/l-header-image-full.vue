@@ -14,10 +14,14 @@ export default {
 @import '~tools';
 
 .header-image-full {
-	// Header styles
 	background-color: black;
-	background-position: center center;
+	background-position: center top;
 	background-size: cover;
-	height: 300px;
+	height: grid(9);
+	max-width: 1010px;
+	@media #{$medium-down} {
+		height: 300px;
+		background-position: center center;
+	}
 }
 </style>

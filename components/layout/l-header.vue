@@ -13,6 +13,11 @@
 				<nav :class="['main-nav', { 'animate': showMobileMenu }]">
 					<ul class="main-nav__list">
 						<li class="main-nav__item" @click="toggleMenu()">
+							<nuxt-link to="/" class="main-nav__link">
+								<span class="main-nav__text">Home</span>
+							</nuxt-link>
+						</li>
+						<li class="main-nav__item" @click="toggleMenu()">
 							<nuxt-link to="/maggy" class="main-nav__link">
 								<span class="main-nav__text">Over Maggy</span>
 							</nuxt-link>
@@ -147,8 +152,12 @@ export default {
 				background-position: center center;
 				background-size: contain;
 				background-repeat: no-repeat;
+				@media #{$medium-down} {
+					width: 100vw;
+					height: 150px;
+				}
 			}
-			&.nuxt-link-active {
+			&.nuxt-link-exact-active {
 				.main-nav__text {
 					color: color(White);
 					&::before {

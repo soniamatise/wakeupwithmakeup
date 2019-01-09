@@ -11,6 +11,7 @@
 		<h5 class="sub">
 			© 2019 Copyright - Wake Up With Make Up - All Rights Reserved.
 		</h5>
+		<!-- <h6 class="credit">Website build by Sonia Nusselder with ♥</h6> -->
 	</footer>
 </template>
 
@@ -23,8 +24,16 @@ export default {};
 .footer {
 	position: relative;
 	z-index: 2;
-	padding: 2rem;
+	padding: 2rem 2rem 10px;
 	text-align: center;
+
+	h5 {
+		color: color(Gold);
+	}
+	h5.credit {
+		padding-top: 2rem;
+		font-size: 14px;
+	}
 
 	ul {
 		padding:0;
@@ -40,11 +49,11 @@ export default {};
 		}
 	}
 	.social-icon {
-		color: color(White) !important;
+		color: color(Gold) !important;
 		opacity: 1;
 		transition: color 250ms ease;
 		&:hover {
-			color: color(Gold) !important;
+			color: color(White) !important;
 		}
 	}
 	ul.social-icons {
