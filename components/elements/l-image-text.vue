@@ -2,15 +2,21 @@
 	<div class="row center">
 		<div class="column small-full medium-full large-20 image-text">
 			<div class="image-text__images">
-				<div class="image-text__images--mask image-text__images--mask-first">
-					<div :style="`background-image: url('${ image2 }')`" class="image" />
-				</div>
-				<div class="image-text__images--mask image-text__images--mask-second">
-					<div :style="`background-image: url('${ image1 }')`" class="image" />
-				</div>
-				<div class="image-text__images--mask image-text__images--mask-third">
-					<div :style="`background-image: url('${ image3 }')`" class="image" />
-				</div>
+				<nuxt-link to="/portfolio" class="image-text__link">
+					<div class="image-text__images--mask image-text__images--mask-first">
+						<div :style="`background-image: url('${ image2 }')`" class="image" />
+					</div>
+				</nuxt-link>
+				<nuxt-link to="/maggy" class="image-text__link image-text__link-middle">
+					<div class="image-text__images--mask image-text__images--mask-second">
+						<div :style="`background-image: url('${ image1 }')`" class="image" />
+					</div>
+				</nuxt-link>
+				<nuxt-link to="/portfolio" class="image-text__link">
+					<div class="image-text__images--mask image-text__images--mask-third">
+						<div :style="`background-image: url('${ image3 }')`" class="image" />
+					</div>
+				</nuxt-link>
 			</div>
 		</div>
 	</div>
@@ -32,6 +38,15 @@ export default {
 		height: 300px;
 	}
 
+	&__link {
+		width: 20%;
+		height: 100%;
+
+		&-middle {
+			width: 50%;	
+		}
+	}
+
 	// LEFT
 	&__images {
 		width: 100%;
@@ -51,19 +66,19 @@ export default {
 				height: 100%;
 			}
 			&-first {
-				width: 20%;
+				width: 100%;
 				height: 100%;
 				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 			}
 			&-second {
-				width: 50%;
+				width: 100%;
 				height: 100%;
 				-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 				clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 			}
 			&-third {
-				width: 20%;
+				width: 100%;
 				height: 100%;
 				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
