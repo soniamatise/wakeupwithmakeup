@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--prijslijst">
-		<l-header-image-full :image-bg="infoHeader"/>
+		<!-- <l-header-image-full :image-bg="infoHeader"/> -->
 		<l-section section-title="Prijslijst" section-content=""/>
 		<div class="row center">
 			<div class="column small-full medium-full large-20 tabellen">

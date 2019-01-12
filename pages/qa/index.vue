@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--qa">
-		<l-header-image-full :image-bg="infoHeader"/>
+		<!-- <l-header-image-full :image-bg="infoHeader"/> -->
 		<l-section section-title="Q&A" section-content="" />
 		<div class="row center">
 			<div class="column small-full medium-full large-20 qa-inner">

@@ -26,8 +26,11 @@ export default {
 @import '~tools';
 
 .image-text {
-	height: grid(7);
+	height: grid(9);
 	display: flex;
+	@media #{$medium-down} {
+		height: 300px;
+	}
 
 	// LEFT
 	&__images {
