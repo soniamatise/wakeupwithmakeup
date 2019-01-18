@@ -60,7 +60,6 @@ export default {
 			overflow: hidden;
 			.image { 
 				background-position: center center;
-				background-size: cover;
 				background-repeat: no-repeat;
 				width: 100%;
 				height: 100%;
@@ -68,20 +67,33 @@ export default {
 			&-first {
 				width: 100%;
 				height: 100%;
+				background-size: contain;
 				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+				background-color: white;
+				.image {
+					background-size: contain;
+				}
 			}
 			&-second {
 				width: 100%;
 				height: 100%;
 				-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 				clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+				.image {
+					background-size: cover;
+				}
 			}
 			&-third {
 				width: 100%;
 				height: 100%;
+				background-size: contain;
 				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+				background-color: white;
+				.image {
+					background-size: contain;
+				}
 			}
 		}
 	}

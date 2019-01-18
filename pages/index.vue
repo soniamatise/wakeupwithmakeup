@@ -2,8 +2,8 @@
 	<main class="page page--home">
 		<l-image-text 
 			:image1="require('~/static/images/home/maggy2.jpg')"
-			:image2="require('~/static/images/home/eyebrowshape1.jpg')" 
-			:image3="require('~/static/images/home/circleIcon_rose.png')"/>
+			:image2="require('~/static/images/logo/wuwm-black.png')" 
+			:image3="require('~/static/images/logo/wuwm-black.png')"/>
 			<!-- SAY YES TO SMUDGEPROOF MAKEUP! --> 
 	</main>
 </template>
