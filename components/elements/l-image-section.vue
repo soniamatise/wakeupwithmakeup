@@ -30,6 +30,9 @@ export default {
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
+			@media #{$medium-up} {
+				height: grid(8);
+			}
 		}
 		h3 {
 			padding: 2rem 0 1rem;
