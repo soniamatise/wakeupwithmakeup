@@ -4,7 +4,6 @@
 			:image1="require('~/static/images/home/maggy2.jpg')"
 			:image2="require('~/static/images/home/eyebrowshape1.jpg')" 
 			:image3="require('~/static/images/home/circleIcon_rose.png')"/>
-
 			<!-- SAY YES TO SMUDGEPROOF MAKEUP! --> 
 	</main>
 </template>

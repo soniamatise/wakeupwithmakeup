@@ -17,7 +17,7 @@ export default {
 	background-color: black;
 	background-position: center top;
 	background-size: cover;
-	height: grid(9);
+	height: grid(10);
 	max-width: 1010px;
 	@media #{$medium-down} {
 		height: 300px;

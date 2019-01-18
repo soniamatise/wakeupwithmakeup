@@ -61,7 +61,11 @@ export default {
 			}
 			&__content {
 				padding: 2rem 1rem;
+				background-color: color(Dark);
 				border-bottom: 2px color(Dark) solid;
+				p {
+					color: color(White);
+				}
 			}
 			&--active {
 				height: auto;
