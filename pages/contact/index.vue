@@ -22,7 +22,6 @@ const axios = require('axios');
 const apiDomain = process.env.apiDomain;
 import lButton from '~/components/elements/l-button.vue';
 import lSection from '~/components/elements/l-section.vue';
-import lImageText from '~/components/elements/l-image-text.vue';
 import lHeaderImageFull from '~/components/elements/l-header-image-full.vue';
 
 
@@ -30,7 +29,6 @@ export default {
 	components: {
 		lButton,
 		lSection,
-		lImageText,
 		lHeaderImageFull
 	},
 	data() {

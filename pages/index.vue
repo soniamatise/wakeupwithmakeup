@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--home">
-		<l-image-text 
+		<l-home-images 
 			:image1="require('~/static/images/home/maggy2.jpg')"
 			:image2="require('~/static/images/logo/wuwm.png')" 
 			:image3="require('~/static/images/logo/wuwm.png')"/>
@@ -13,14 +13,14 @@ const axios = require('axios');
 const apiDomain = process.env.apiDomain;
 import lButton from '~/components/elements/l-button.vue';
 import lSection from '~/components/elements/l-section.vue';
-import lImageText from '~/components/elements/l-image-text.vue';
+import lHomeImages from '~/components/elements/l-home-images.vue';
 
 
 export default {
 	components: {
 		lButton,
 		lSection,
-		lImageText,
+		lHomeImages,
 	},
 	// asyncData({ params, error }) {
 	// 	return axios.get(apiDomain + '/wp/v2/pages/6').then(async result => {

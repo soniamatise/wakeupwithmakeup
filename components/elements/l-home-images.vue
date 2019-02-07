@@ -2,7 +2,7 @@
 	<div class="row center">
 		<div class="column small-full medium-full large-20 image-text">
 			<div class="image-text__images">
-				<nuxt-link to="/portfolio" class="image-text__link">
+				<nuxt-link to="/portfolio" class="image-text__link image-text__link-side">
 					<div class="image-text__images--mask image-text__images--mask-first">
 						<div :style="`background-image: url('${ image2 }')`" class="image" />
 					</div>
@@ -12,7 +12,7 @@
 						<div :style="`background-image: url('${ image1 }')`" class="image" />
 					</div>
 				</nuxt-link>
-				<nuxt-link to="/portfolio" class="image-text__link">
+				<nuxt-link to="/portfolio" class="image-text__link image-text__link-side">
 					<div class="image-text__images--mask image-text__images--mask-third">
 						<div :style="`background-image: url('${ image3 }')`" class="image" />
 					</div>
@@ -34,6 +34,7 @@ export default {
 .image-text {
 	height: grid(9);
 	display: flex;
+	flex-direction: row;
 	@media #{$medium-down} {
 		height: 300px;
 	}
@@ -43,6 +44,13 @@ export default {
 
 		&-middle {
 			width: 50%;	
+		}
+
+		@media #{$small-only}{
+			width: 100%;
+			&-side {
+				display: none;
+			}
 		}
 	}
 
@@ -54,6 +62,9 @@ export default {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		@media #{$small-only} {
+			flex-direction: column;
+		}
 
 		&--mask {
 			overflow: hidden;
