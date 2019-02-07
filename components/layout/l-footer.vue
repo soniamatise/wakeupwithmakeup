@@ -2,7 +2,7 @@
 	<footer id="footer" class="footer">
 		<div class="socials">
 			<ul class="social-icons">
-				<li><a target="_blank" href="https://www.facebook.com/makeubymaggy/" class="social-icon"> <i class="fa fa-facebook"/></a></li>
+				<li><a target="_blank" href="https://www.facebook.com/makeupbymaggy" class="social-icon"> <i class="fa fa-facebook"/></a></li>
 				<li><a target="_blank" href="http://instagram.com/wakeupwithmakeup_amsterdam/" class="social-icon"> <i class="fa fa-instagram"/></a></li>
 				<li><a href="mailto:maggy@wakeupwithmakeup.nl" class="social-icon"> <i class="fa fa-envelope"/></a></li>
 				<li><a href="tel:0623100230" class="social-icon"> <i class="fa fa-phone"/></a></li>

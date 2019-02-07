@@ -3,7 +3,7 @@
 		<div class="menu-wrapper" @click="toggleMenu()">
 			<div :class="['hamburger-menu', { 'animate': showMobileMenu }]" />	  
 		</div>
-		<div class="row center small-full medium-full large-14">
+		<div class="row center small-full medium-full large-20">
 			<div class="column">
 				<li class="main-nav__item logo-link">
 					<nuxt-link to="/" class="main-nav__link">
@@ -23,8 +23,13 @@
 							</nuxt-link>
 						</li>
 						<li class="main-nav__item" @click="toggleMenu()">
-							<nuxt-link to="/informatie" class="main-nav__link">
-								<span class="main-nav__text">Informatie</span>
+							<nuxt-link to="/informatie/permanente-make-up" class="main-nav__link">
+								<span class="main-nav__text">Permanente make-up</span>
+							</nuxt-link>
+						</li>
+						<li class="main-nav__item" @click="toggleMenu()">
+							<nuxt-link to="/informatie/browtreatment" class="main-nav__link">
+								<span class="main-nav__text">Browtreatment</span>
 							</nuxt-link>
 						</li>
 						<li class="main-nav__item" @click="toggleMenu()">
@@ -126,6 +131,7 @@ export default {
 			color: color(Gold);
 			font-family: $second-font;
 			transition: color 600ms $easing;
+			white-space: nowrap;
 
 			&::before {
 				content: '';

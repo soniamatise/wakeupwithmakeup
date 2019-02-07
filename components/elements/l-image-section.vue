@@ -23,6 +23,10 @@ export default {
 .image-section-container {
 	.section {
 		display: flex;
+		flex-direction: row;
+		@media #{$medium-down} {
+			flex-direction: column;
+		}
 		.image {
 			width: 100%;
 			height: 300px;

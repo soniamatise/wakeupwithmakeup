@@ -37,7 +37,6 @@ export default {
 	@media #{$medium-down} {
 		height: 300px;
 	}
-
 	&__link {
 		width: 20%;
 		height: 100%;
@@ -70,7 +69,7 @@ export default {
 				background-size: contain;
 				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-				background-color: white;
+				background-color: black;
 				.image {
 					background-size: contain;
 				}
@@ -90,7 +89,7 @@ export default {
 				background-size: contain;
 				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-				background-color: white;
+				background-color: black;
 				.image {
 					background-size: contain;
 				}
